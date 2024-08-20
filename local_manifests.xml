@@ -18,7 +18,7 @@
            
 
 <!--Tree -->
- <project path="device/xiaomi/ysl" name="android_device_xiaomi_ysl" remote="harsh" revision="rise" />
+ <project path="device/xiaomi/ysl" name="android_device_xiaomi_ysl" remote="harsh" revision="derp" />
  
 <!--Kernel -->
  <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="xdev" revision="lineage-21" />
