@@ -12,7 +12,7 @@
            fetch="https://github.com/Harsh-Tagra"
            clone-depth="1" />
            
-  <remote name="derp"
+  <remote name="derpfest"
            fetch="https://github.com/DerpFest-Devices"
            clone-depth="1" />  
            
@@ -31,6 +31,6 @@
  <project path="vendor/xiaomi/msm8953-common" name="proprietary_vendor_xiaomi_msm8953-common" remote="xdev" revision="lineage-21" />
   
 <!--Extras -->
-<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="derp" revision="14" />
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="derpfest" revision="14" />
            
 </manifest>
