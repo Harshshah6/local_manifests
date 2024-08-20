@@ -1,40 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="xdev"
-           fetch="https://github.com/xiaomi-msm8953-devs"
-           clone-depth="1" />
-           
-  <remote name="gio"
-           fetch="https://gitlab.com/itsvixano-dev"
-           clone-depth="1" />
-           
-  <remote name="harsh"
-           fetch="https://github.com/Harsh-Tagra"
-           clone-depth="1" />
-           
-  <remote name="lineage-21"
-           fetch="https://github.com/LineageOS/"
-           clone-depth="1" />  
-               
-  <remote name="gcam"
-           fetch="https://github.com/ArrowOS-Devices"
-           clone-depth="1" />       
-           
 
-<!--Tree -->
- <project path="device/xiaomi/ysl" name="android_device_xiaomi_ysl" remote="harsh" revision="lineage-21" />
- 
-<!--Kernel -->
- <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="xdev" revision="lineage-21" />
- 
- <!--Vendor -->
- <project path="vendor/xiaomi/ysl" name="proprietary_vendor_xiaomi_ysl" remote="xdev" revision="lineage-21" />
- 
- <!--Common tree -->
- <project path="device/xiaomi/msm8953-common" name="android_device_xiaomi_msm8953-common" remote="xdev" revision="lineage-21" />
-  <project path="vendor/xiaomi/msm8953-common" name="proprietary_vendor_xiaomi_msm8953-common" remote="xdev" revision="lineage-21" />
-  
-<!--Extras -->
-<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage-21" revision="lineage-21" />
-           
+  <!-- Remotes -->
+  <remote name="xdev" fetch="https://github.com/xiaomi-msm8953-devs" clone-depth="1" />
+  <remote name="harsh" fetch="https://github.com/Harshshah6" clone-depth="1" />
+  <remote name="harshtg" fetch="https://github.com/Harsh-Tagra" clone-depth="1" />
+  <remote name="derp" fetch="https://github.com/DerpFest-Devices" clone-depth="1" />
+
+  <!-- Projects -->
+  <project-group name="device">
+    <project path="device/xiaomi/ysl" name="android_device_xiaomi_ysl" remote="harsh" revision="derp" />
+    <project path="device/xiaomi/msm8953-common" name="android_device_xiaomi_msm8953-common" remote="xdev" revision="lineage-21" />
+  </project-group>
+
+  <project-group name="kernel">
+    <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="xdev" revision="lineage-21" />
+  </project-group>
+
+  <project-group name="vendor">
+    <project path="vendor/xiaomi/ysl" name="proprietary_vendor_xiaomi_ysl" remote="xdev" revision="lineage-21" />
+    <project path="vendor/xiaomi/msm8953-common" name="proprietary_vendor_xiaomi_msm8953-common" remote="xdev" revision="lineage-21" />
+  </project-group>
+
+  <project-group name="extras">
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="derp" revision="14" />
+  </project-group>
+
 </manifest>
